@@ -1,2 +1,2 @@
 # casey_krajza
-Program by Casey Krajza
+Programs by Casey Krajza
