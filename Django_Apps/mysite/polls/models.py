@@ -19,7 +19,8 @@ class Question(models.Model):
 
     #adding recently published method, checks if question was posted within one day
     def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1) 
+        now = timezone.now() 
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now 
     
 
 
